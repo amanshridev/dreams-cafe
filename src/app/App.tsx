@@ -171,11 +171,11 @@ const services = [
 
 // ─── Ratings ──────────────────────────────────────────────────────────────────
 const ratings = [
-  { label: "Food Quality",    score: 5 },
+  { label: "Food Quality", score: 5 },
   { label: "Value for Money", score: 4 },
-  { label: "Service Speed",   score: 4 },
-  { label: "Ambience",        score: 5 },
-  { label: "Coffee",          score: 5 },
+  { label: "Service Speed", score: 4 },
+  { label: "Ambience", score: 5 },
+  { label: "Coffee", score: 5 },
   { label: "Family Friendly", score: 4 },
 ];
 
@@ -227,12 +227,12 @@ export default function App() {
           <div className="absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0.38) 0%, transparent 35%, rgba(0,0,0,0.78) 100%)" }} />
 
           {/* Floating particles */}
-          <FloatingParticle emoji="☕" x="8%"  y="55%" delay={0}   duration={5.5} distance={30} />
-          <FloatingParticle emoji="✦"  x="14%" y="40%" delay={1.2} duration={4.8} distance={22} />
-          <FloatingParticle emoji="🌿" x="5%"  y="70%" delay={2.4} duration={6.2} distance={35} />
+          <FloatingParticle emoji="☕" x="8%" y="55%" delay={0} duration={5.5} distance={30} />
+          <FloatingParticle emoji="✦" x="14%" y="40%" delay={1.2} duration={4.8} distance={22} />
+          <FloatingParticle emoji="🌿" x="5%" y="70%" delay={2.4} duration={6.2} distance={35} />
           <FloatingParticle emoji="⭐" x="88%" y="60%" delay={0.6} duration={5.0} distance={28} />
           <FloatingParticle emoji="🍃" x="92%" y="45%" delay={1.8} duration={5.8} distance={32} />
-          <FloatingParticle emoji="✦"  x="82%" y="72%" delay={3.0} duration={4.5} distance={20} />
+          <FloatingParticle emoji="✦" x="82%" y="72%" delay={3.0} duration={4.5} distance={20} />
           <FloatingParticle emoji="🌸" x="50%" y="18%" delay={0.9} duration={7.0} distance={40} />
           <FloatingParticle emoji="🫖" x="72%" y="30%" delay={2.1} duration={5.2} distance={26} />
 
@@ -297,12 +297,12 @@ export default function App() {
               {/* Giant heading */}
               <div className="col-span-12 lg:col-span-8">
                 <motion.span
-                  style={{ fontFamily: "'Caveat', cursive", fontSize: 20, color: gold, display: "block", marginBottom: 4, opacity: 0.9 }}
+                  style={{ fontFamily: "'Caveat', cursive", fontSize: 50, color: gold, display: "block", marginBottom: 4, opacity: 0.9 }}
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 0.9, y: 0 }}
                   transition={{ delay: 0.3, duration: 0.6 }}
                 >
-                  est. 2022 · Downtown
+                  The
                 </motion.span>
 
                 <div style={{ fontSize: "clamp(11vw, 14vw, 15vw)", fontWeight: 800, lineHeight: 0.85, letterSpacing: "-0.05em", color: cream, overflow: "hidden" }}>
@@ -439,10 +439,10 @@ export default function App() {
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-16">
             {[
-              { Icon: Star,       to: 48,  suffix: "/5",  label: "Average rating",  note: "312 reviews" },
-              { Icon: Coffee,     to: 20,  suffix: "$",   label: "Max price",       note: "per person" },
-              { Icon: Users,      to: 312, suffix: "+",   label: "Happy guests",    note: "& growing" },
-              { Icon: TrendingUp, to: 10,  suffix: "PM",  label: "Closing time",    note: "daily" },
+              { Icon: Star, to: 48, suffix: "/5", label: "Average rating", note: "312 reviews" },
+              { Icon: Coffee, to: 20, suffix: "$", label: "Max price", note: "per person" },
+              { Icon: Users, to: 312, suffix: "+", label: "Happy guests", note: "& growing" },
+              { Icon: TrendingUp, to: 10, suffix: "PM", label: "Closing time", note: "daily" },
             ].map(({ Icon, to, suffix, label, note }, i) => (
               <motion.div
                 key={label}
